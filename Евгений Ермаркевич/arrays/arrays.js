@@ -144,7 +144,25 @@
 //     console.log(maxEvenNumber);
 // }
 
+// 11. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
+// пользователь вводит число n, вывести в консоль элемент массива
+// который наиболее близок к n (если таких элементов несколько, вывести несколько)
 
+const numbers = [23, 546, 84, 81, 324, 34, 70, 1002, 7, 88];
+let userNumber = +prompt( 'Введите число' );
+let minDifference = Math.abs( userNumber - numbers[0] );
+
+for (let i = 0; i < numbers.length; i++) {
+    if (Math.abs( userNumber - numbers[i] ) < minDifference) {
+        minDifference = Math.abs( userNumber - numbers[i] );
+    }
+}
+
+for (let i = 0; i < numbers.length; i++) {
+    if (Math.abs( userNumber - numbers[i] ) === minDifference) {
+        console.log(numbers[i]);
+    }
+}
 
 
 
