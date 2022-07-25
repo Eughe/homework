@@ -128,4 +128,23 @@
 // console.log(subMaxNumber);
 
 
+// 10. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
+// выведите на экран наибольший ЧЕТНЫЙ элемент массива
+
+// const numbers = [23, 546, 84, 81, 324, 34, 70, 12, 7, 88];
+// let maxEvenNumber = -Infinity;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0 && numbers[i] > maxEvenNumber) {
+//         maxEvenNumber = numbers[i];
+//     }
+// }
+
+// if (maxEvenNumber > -Infinity) {
+//     console.log(maxEvenNumber);
+// }
+
+
+
+
 
