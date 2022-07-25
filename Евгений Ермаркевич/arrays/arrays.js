@@ -94,15 +94,17 @@
 
 // 8. дан массив 10 чисел. вывести наибольшее число из этого массива
 
-const numbers = [23, 546, 84, 81, 324, 34, 70, 1002, 7, 88];
-let maxNumber = numbers[0];
+// const numbers = [23, 546, 84, 81, 324, 34, 70, 1002, 7, 88];
+// let maxNumber = numbers[0];
 
-for (let i = 0; i < numbers.length; i++) {
-    if (maxNumber < numbers[i]) {
-        maxNumber = numbers[i];
-    }
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     if (maxNumber < numbers[i]) {
+//         maxNumber = numbers[i];
+//     }
+// }
 
-console.log(maxNumber);
+// console.log(maxNumber);
+
+
 
 
