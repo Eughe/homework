@@ -106,5 +106,26 @@
 // console.log(maxNumber);
 
 
+// 9. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
+// найдите количество элементов массива, которые отличны от наибольшего 
+// не больше чем на 10%
+
+// const numbers = [23, 56, 84, 81, 32, 34, 70, 10, 7, 88];
+// let maxNumber = numbers[0];
+// let subMaxNumber = -1;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (maxNumber < numbers[i]) {
+//         maxNumber = numbers[i];
+//     }
+// }
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (maxNumber*0.9 <= numbers[i]) {
+//         subMaxNumber = ++subMaxNumber;
+//     }
+// }
+// console.log(subMaxNumber);
+
 
 
