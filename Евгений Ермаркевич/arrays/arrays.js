@@ -4,7 +4,7 @@
 // let sumNumbers = 0;
 
 // for (let i = 0; i < numbers.length; i++) {
-//     sumNumbers = sumNumbers + numbers[i];
+//   sumNumbers = sumNumbers + numbers[i];
 // }
 
 // console.log(sumNumbers);
@@ -17,8 +17,8 @@
 // let average;
 
 // for (let i = 0; i < numbers.length; i += 2) {
-//     sumNumbers = sumNumbers + numbers[i]; 
-//     counter = i/2 + 1;  
+//   sumNumbers = sumNumbers + numbers[i];
+//   counter = i / 2 + 1;
 // }
 
 // average = sumNumbers / counter;
@@ -31,24 +31,22 @@
 // const numbersNegative = [];
 
 // for (let i = 0; i < numbers.length; i++) {
-//     numbersNegative[i] = - numbers[i];
+//   numbersNegative[i] = -numbers[i];
 // }
 
 // console.log(numbersNegative);
 
-
 // 4. Создать пустой массив длиной 10 и автоматически заполнить массив
 // нулями и единицами, начиная с единицы
-
 
 // let numbers = new Array(10);
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (i % 2 === 0) {
-//             numbers[i] = 1;
-//     } else {
-//             numbers[i] = 0;
-//     }
+//   if (i % 2 === 0) {
+//     numbers[i] = 1;
+//   } else {
+//     numbers[i] = 0;
+//   }
 // }
 
 // console.log(numbers);
@@ -59,9 +57,9 @@
 // let oddNumber = 1;
 
 // for (let i = 0; i < numbers.length; i++) {
-//     numbers[i] = oddNumber;
-//     oddNumber += 2;
-//     } 
+//   numbers[i] = oddNumber;
+//   oddNumber += 2;
+// }
 
 // console.log(numbers);
 
@@ -71,11 +69,10 @@
 // let numbers = new Array(10);
 
 // for (let i = 0; i < numbers.length; i++) {
-//      numbers[i] =  i**2;
-//      } 
+//   numbers[i] = i ** 2;
+// }
 
 // console.log(numbers);
-
 
 // 7. Дан массив 10 числе. Вывести в консоль количество чётных
 // элементов из этого массива
@@ -84,13 +81,12 @@
 // let evenNumbers = 0;
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] % 2 === 0) {
-//         evenNumbers = ++evenNumbers;
-//     }
+//   if (numbers[i] % 2 === 0) {
+//     ++evenNumbers;
+//   }
 // }
 
 // console.log(evenNumbers);
-
 
 // 8. дан массив 10 чисел. вывести наибольшее число из этого массива
 
@@ -98,16 +94,15 @@
 // let maxNumber = numbers[0];
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (maxNumber < numbers[i]) {
-//         maxNumber = numbers[i];
-//     }
+//   if (maxNumber < numbers[i]) {
+//     maxNumber = numbers[i];
+//   }
 // }
 
 // console.log(maxNumber);
 
-
 // 9. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
-// найдите количество элементов массива, которые отличны от наибольшего 
+// найдите количество элементов массива, которые отличны от наибольшего
 // не больше чем на 10%
 
 // const numbers = [23, 56, 84, 81, 32, 34, 70, 10, 7, 88];
@@ -115,18 +110,17 @@
 // let subMaxNumber = -1;
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (maxNumber < numbers[i]) {
-//         maxNumber = numbers[i];
-//     }
+//   if (maxNumber < numbers[i]) {
+//     maxNumber = numbers[i];
+//   }
 // }
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (maxNumber*0.9 <= numbers[i]) {
-//         subMaxNumber = ++subMaxNumber;
-//     }
+//   if (maxNumber * 0.9 <= numbers[i]) {
+//     ++subMaxNumber;
+//   }
 // }
 // console.log(subMaxNumber);
-
 
 // 10. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
 // выведите на экран наибольший ЧЕТНЫЙ элемент массива
@@ -135,13 +129,13 @@
 // let maxEvenNumber = -Infinity;
 
 // for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] % 2 === 0 && numbers[i] > maxEvenNumber) {
-//         maxEvenNumber = numbers[i];
-//     }
+//   if (numbers[i] % 2 === 0 && numbers[i] > maxEvenNumber) {
+//     maxEvenNumber = numbers[i];
+//   }
 // }
 
 // if (maxEvenNumber > -Infinity) {
-//     console.log(maxEvenNumber);
+//   console.log(maxEvenNumber);
 // }
 
 // 11. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
@@ -149,20 +143,17 @@
 // который наиболее близок к n (если таких элементов несколько, вывести несколько)
 
 const numbers = [23, 546, 84, 81, 324, 34, 70, 1002, 7, 88];
-let userNumber = +prompt( 'Введите число' );
-let minDifference = Math.abs( userNumber - numbers[0] );
+let userNumber = +prompt("Введите число");
+let minDifference = Math.abs(userNumber - numbers[0]);
 
 for (let i = 0; i < numbers.length; i++) {
-    if (Math.abs( userNumber - numbers[i] ) < minDifference) {
-        minDifference = Math.abs( userNumber - numbers[i] );
-    }
+  if (Math.abs(userNumber - numbers[i]) < minDifference) {
+    minDifference = Math.abs(userNumber - numbers[i]);
+  }
 }
 
 for (let i = 0; i < numbers.length; i++) {
-    if (Math.abs( userNumber - numbers[i] ) === minDifference) {
-        console.log(numbers[i]);
-    }
+  if (Math.abs(userNumber - numbers[i]) === minDifference) {
+    console.log(numbers[i]);
+  }
 }
-
-
-
